@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding and removing elements</title>
+  </head>
+  <body>
+    <a href="index.html"><button>home</button></a>
+    <a href="iterations.html"><button>Array Iterations</button></a>
+    <a href="search-and-find.html"><button>Search and Find</button></a>
+    <a href="flattening-and-combining.html"
+      ><button>Flattening and combining</button></a
+    >
+    <a href="mutable-vs-immutable.html"
+      ><button>Mutable vs Immutable</button></a
+    >
+    <h2>Adding and removing elements</h2>
+    <ul>
+      <li>✅push() – Add to end.</li>
+      <li>✅pop() – Remove from end.</li>
+      <li>✅unshift() – Add to start.</li>
+      <li>✅shift() – Remove from start.</li>
+      <li>✅splice() – Add/remove at specific index.</li>
+      <li>
+        ✅slice() method returns selected elements in a new array. Negative
+        numbers select from the end of the array.
+      </li>
+
+      <li>✅fill() – Replace elements with a static value.</li>
+    </ul>
+
+    <h2>fill()</h2>
+    <div style="line-height: 0.6">
+      <p>
+        The fill() method fills specified elements in an array with a value.
+      </p>
+      <p>The fill() method overwrites the original array</p>
+      <p>
+        Start and end position can be specified. If not, all elements will be
+        filled.
+      </p>
+      <p><mark>Syntax - array.fill(value, start, end)</mark></p>
+      <p>
+        value: Required. The value to fill in. &nbsp;&nbsp;&nbsp;start:
+        Optional. The start index (position). Default is 0.
+        &nbsp;&nbsp;&nbsp;end: Optional. The stop index (position). Default is
+        array length.
+      </p>
+    </div>
+    <div style="display: flex; gap: 30px  ;line-height: 0.6">
+      <div style="line-height: 0.8">
+        <h3>Example one</h3>
+        <p>fill() fills specified elements in an array with a value.</p>
+        <p>Fill all array elements with "Kiwi":</p>
+
+        <p id="demo"></p>
+        <p>fruits.fill("Kiwi")</p>
+        <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+        <p>document.getElementById("demo").innerHTML = fruits.fill("Kiwi");</p>
+        <p>//output &nbsp;&nbsp;Kiwi,Kiwi,Kiwi,Kiwi</p>
+        <p>The fill() method is not supported in Internet Explorer.</p>
+      </div>
+
+      <div style="line-height: 0.6">
+        <h3>Example Two</h3>
+        <p>fill() fills specified elements in an array with a value.</p>
+        <p>Fill the last two array elements with "Kiwi":</p>
+
+        <p id="demo"></p>
+        <p>fruits.fill("Kiwi",2,4)</p>
+        <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+        <p>
+          document.getElementById("demo").innerHTML = fruits.fill("Kiwi",2,4);
+        </p>
+        <p>//output &nbsp;&nbsp;Banana,Orange,Kiwi,Kiwi</p>
+        <p>The fill() method is not supported in Internet Explorer.</p>
+      </div>
+      <div style="line-height: 0.6">
+        <h3>Example Three</h3>
+        <p>
+          // Fill entire array - console.log([1, 2, 3].fill(4)); // [4, 4, 4]
+        </p>
+
+        <p>
+          // Fill from index 1 to end - console.log([1, 2, 3, 4].fill(5, 1)); //
+          [1, 5, 5, 5]
+        </p>
+
+        <p>
+          // Fill from index 2 to 4 -console.log([1, 2, 3, 4].fill(0, 2, 4)); //
+          [1, 2, 0, 0]
+        </p>
+
+        <p>
+          // Using negative indexe -console.log([1, 2, 3].fill(9, -2)); // [1,
+          9, 9]
+        </p>
+
+        <p>
+          // Creating an array with default values
+          -console.log(Array(5).fill("X"));
+        </p>
+
+        <p>// ["X", "X", "X", "X", "X"]</p>
+        <p>
+          <mark
+            >If the value is an object, all elements will reference the same
+            object:</mark
+          >
+        </p>
+        <p>
+          let arr = Array(3).fill({}); arr[0].name = "John"; console.log(arr);
+        </p>
+
+        <p>// [{name: "John"}, {name: "John"}, {name: "John"}]</p>
+      </div>
+    </div>
+  </body>
+</html>

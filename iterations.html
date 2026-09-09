@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Iterations</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <a href="index.html"><button>Home</button></a>
+    <a href="adding-removing-elements.html"
+      ><button>Array adding and removing elements</button></a
+    >
+    <a href="search-and-find.html"><button>Search and Find</button></a>
+    <a href="flattening-and-combining.html"
+      ><button>Flattening and combining</button></a
+    >
+    <a href="mutable-vs-immutable.html"
+      ><button>Mutable vs Immutable</button></a
+    >
+    <h1>Array Iterations: Reduce(), forEach(), filter(), map()</h1>
+    <br />
+    <h2>
+      <mark> LOOK AT THE JAVASCRIPT EXAMPLES ON ATTACHED JS FILE!!!!</mark>
+    </h2>
+    <h2>Reduce()</h2>
+    <p>
+      ✅ The reduce() method iterates over each element of the array, applying
+      the reducer function to accumulate a result. The reducer function takes
+      four arguments:
+    </p>
+    <p>
+      accumulator: The accumulated value previously returned in the last
+      invocation of the callback, or the initial value if provided.
+    </p>
+    <p>currentValue: The current element being processed in the array.</p>
+    <p>
+      currentIndex: The index of the current element being processed in the
+      array. array: The array reduce() was called upon.
+    </p>
+
+    <p id="reduce-original-array"></p>
+    <p id="reduce-array"></p>
+    <br />
+    <h2>forEach()</h2>
+
+    <p>
+      ✅ Use forEach() when you only need to perform actions and don’t care
+      about a return value. Side effects only.
+    </p>
+
+    <div style="display: flex">
+      <div id="for-each-div"></div>
+    </div>
+    <br />
+    <p id="for-each-original-second-array"></p>
+    <div id="for-each-second-div" style="display: flex"></div>
+    <br />
+
+    <h2>Filter()</h2>
+    <p>
+      ✅The filter() method in JavaScript is used to create a new array
+      containing elements that pass a specific test implemented by a callback
+      function. It does not modify the original array.
+    </p>
+    <p id="filter-original-array"></p>
+    <p id="filter-array"></p>
+    <p id="filtered-string-array"></p>
+    <p id="filtered-odd-numbers"></p>
+    <p id="filtered-even-numbers"></p>
+
+    <br />
+    <h2>
+      Using ForEach() and Filter() together to separate categories. teams:
+      Leicester and ground: Nou Camp
+    </h2>
+    <div style="display: flex; gap: 150px">
+      <div id="for-each-and-filter-div"><h3>Team Leicester</h3></div>
+
+      <div id="for-each-and-filter-second-div"><h3>Ground Nou Camp</h3></div>
+    </div>
+    <h2>Map()</h2>
+    <p>✅ Use map() when you need a new array of transformed values.</p>
+    <p id="map-original-array"></p>
+    <p id="map-array"></p>
+    <br />
+    <script src="iterations.js"></script>
+  </body>
+</html>

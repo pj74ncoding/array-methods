@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <style>
+    button {
+      margin: 10px 0px;
+      background-color: rgb(247, 247, 61);
+      padding: 5px 10px;
+      border-radius: 4px;
+      box-shadow:
+        0px 4px 5px darkgray,
+        0px 4px 5px red,
+        0px 4px 10px blue;
+      transition:
+        all,
+        200ms ease-in-out;
+    }
+    button:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition:
+        all,
+        200ms ease-in-out;
+    }
+  </style>
+  <body>
+    <br />
+    <h1
+      style="
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 7px;
+      "
+    >
+      Array <span style="color: green">methods</span> in catergories
+    </h1>
+    <hr />
+    <br />
+    <div style="display: flex; gap: 50px; margin: auto; width: 95%">
+      <div>
+        <h1>1. Creation & Conversion</h1>
+        <p>✅Array.of() – Creates a new array from arguments.</p>
+        <p>
+          ✅Array.from() – Creates an array from iterable or array-like objects.
+        </p>
+        <p>✅Array() constructor – Creates a new array.</p>
+        <p>✅Spread syntax [...] – Copies or merges arrays.</p>
+        <br />
+        <h1>2. Adding & Removing Elements</h1>
+        <p>✅push() – Add to end.</p>
+        <p>✅pop() – Remove from end.</p>
+        <p>✅unshift() – Add to start.</p>
+        <p>✅shift() – Remove from start.</p>
+        <p>✅splice() – Add/remove at specific index.</p>
+        <p>✅slice() method returns selected elements in a new array.</p>
+        <p>✅fill() – Replace elements with a static value.</p>
+        <a href="adding-removing-elements.html"
+          ><button>Array adding and removing elements</button></a
+        >
+        <br />
+        <h1>3. Searching & Finding</h1>
+        <p>✅indexOf() – First index of a value.</p>
+        <p>✅lastIndexOf() – Last index of a value.</p>
+        <p>✅includes() – Checks if value exists.</p>
+        <p>✅find() – Returns first element matching condition.</p>
+        <p>✅findIndex() – Returns index of first match.</p>
+        <p>✅findLast() (ES2023) –</p>
+        <p>✅Returns last element matching condition.</p>
+        <p>✅findLastIndex() (ES2023) – Returns index of last match.</p>
+        <a href="search-and-find.html"><button>Search and Find</button></a>
+      </div>
+      <div>
+        <h1>4. Iteration & Transformation</h1>
+        <p>✅forEach() – Loop through elements.</p>
+        <p>✅map() – Transform each element into a new array.</p>
+        <p>✅flatMap() – Map and flatten one level.</p>
+        <p>✅filter() – Keep elements matching condition.</p>
+        <p>✅reduce() – Accumulate values into one result.</p>
+        <p>✅reduceRight() – Same as reduce() but from right to left.</p>
+        <a href="iterations.html"><button>Array Iterations</button></a>
+        <br />
+        <h1>5. Sorting & Reordering</h1>
+        <p>✅sort() – Sort elements (default is lexicographic).</p>
+        <p>✅reverse() – Reverse order.</p>
+        <p>✅toReversed() (ES2023) – Returns reversed copy.</p>
+        <p>✅toSorted() (ES2023) –Returns sorted copy.</p>
+        <br />
+        <h1>6. Flattening & Combining</h1>
+        <p>✅concat() – Merge arrays.</p>
+        <p>✅flat() – Flatten nested arrays.</p>
+        <p>✅Spread syntax ... –Merge arrays inline.</p>
+        <a href="flattening-and-combining.html"
+          ><button>Flattening and combining</button></a
+        >
+      </div>
+      <div>
+        <h1>7. String Conversion</h1>
+        <p>✅join() – Join elements into a string.</p>
+        <p>
+          ✅split() – splits a string into an array of substrings, and returns
+          the array:
+        </p>
+        <p>✅toString() – Convert array to</p>
+        <p>✅comma-separated string.</p>
+        <p>✅toLocaleString() – Locale-aware string conversion.</p>
+        <br />
+        <h1>8. Utility & Inspection</h1>
+        <p>✅length – Number of elements.</p>
+        <p>✅isArray() – Check if value is an array.</p>
+        <p>✅entries() – Iterator of [index, value] pairs.</p>
+        <p>✅keys() – Iterator of indexes.</p>
+        <p>✅values() – Iterator of values.</p>
+        <p>✅every() – Check if all match condition.</p>
+        <p>✅some() – Check if at least one matches.</p>
+        <p>✅with() (ES2023) – Returns copy with element replaced at index.</p>
+        <br>
+        <h1>9.Mutable vs Immutable </h1>
+        <a href="mutable-vs-immutable.html"><button>Mutable vs Immutable</button></a>
+      </div>
+    </div>
+    <script src="array-methods-js"></script>
+  </body>
+</html>

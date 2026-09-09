@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutable vs Immutable</title>
+  </head>
+  <body>
+    <a href="index.html"><button>Home</button></a>
+    <a href="iterations.html"><button>Array Iterations</button></a>
+    <a href="adding-removing-elements.html"
+      ><button>Array adding and removing elements</button></a
+    >
+    <a href="flattening-and-combining.html"
+      ><button>Flattening and combining</button></a
+    >
+    <a href="search-and-find.html"><button>Search and find</button></a>
+    <h1>Mutable vs Immutable</h1>
+
+    <p>
+      In JavaScript, the terms mutable and immutable describe whether a value
+      can be changed after it’s created.
+    </p>
+    <div style="display: flex; width: 100%; gap: 20px">
+      <div style="line-height: 0.8">
+        <h3>✅1. Mutable</h3>
+        <p>
+          Definition: Values that can be changed in place without creating a new
+          reference.
+        </p>
+        <p>Examples: Objects ({}) Arrays ([]) Functions</p>
+
+        <p>
+          Behavior: When you modify them, the same reference in memory is
+          updated.
+        </p>
+
+        <p><mark> Mutable example:</mark></p>
+        <p>let person = { name: "Alice" };</p>
+        <p>let alias = person; // alias points to the same object</p>
+
+        <p>alias.name = "Bob";</p>
+
+        <p>console.log(person.name); // "Bob" — original object changed</p>
+      </div>
+
+      <div>
+        <h3>❌ 2. Immutable</h3>
+        <p>Definition: Values that cannot be changed once created.</p>
+        <p>
+          Any "change" creates a new value instead of modifying the original.
+        </p>
+        <p>Examples:</p>
+        <p>Primitive types:</p>
+        <ul>
+          <li>String</li>
+          <li>Number</li>
+          <li>Boolean</li>
+          <li>null</li>
+          <li>undefined</li>
+          <li>Symbol</li>
+          <li>BigInt</li>
+        </ul>
+        <p>Behavior: Modifying them returns a new value.</p>
+        <p><mark> Immutable Example:</mark></p>
+        <p>let greeting = "Hello";</p>
+        <p>let newGreeting = greeting.toUpperCase();</p>
+        <p>console.log(greeting); // "Hello" — original</p>
+        <p>
+          unchanged console.log(newGreeting); // "HELLO" — new string created
+        </p>
+      </div>
+      <div>
+        <h3>✅ Tip: To make objects immutable, you can use:</h3>
+
+        <p>const obj = Object.freeze({ name: "Alice" });</p>
+        <p>obj.name = "Bob"; // Fails silently in non-strict mode</p>
+        <p>console.log(obj.name); // "Alice"</p>
+      </div>
+    </div>
+  </body>
+</html>
