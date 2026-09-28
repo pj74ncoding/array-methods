@@ -66,17 +66,6 @@ Client (Frontend)
 
 ```
 
-2.
-
-client/
-  ├── src/
-  |       └──c
-  ├── routes/
-  ├── models/
-  ├── middleware/
-  └── config/
-
-```
 
 ---
 
