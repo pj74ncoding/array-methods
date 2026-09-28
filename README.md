@@ -40,7 +40,7 @@ Having a central database stops the need to search for examples. Having categori
 
 - Explanations of each array method
 - Buttons to link to different pages
-- Array Method categorised into sections such as Mutable vs Immutable ,Adding & Removing Elements and Iteration & Transformation
+- Array methods categorised into sections such as Mutable vs Immutable ,Adding & Removing Elements and Iteration & Transformation
 - JavaScript files to show examples of how to use the array methods
 
 ---
