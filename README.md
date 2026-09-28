@@ -67,7 +67,7 @@ Client (Frontend)
 ```
 
 
----
+
 
 ## Installation
 
