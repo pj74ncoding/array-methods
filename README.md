@@ -64,10 +64,10 @@ Having a central database stops the need to search for examples. Having categori
 
 Client (Frontend)
 
-```
 
 
 
+---
 
 ## Installation
 
