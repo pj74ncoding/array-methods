@@ -26,7 +26,7 @@ Live Demo: https://array-methods-ten.vercel.app/
 
 ### Motivation
 
-I wanted to build an application that shows array methods all in one place and puts them into categories. The Appication gives explanations of each method also shows examples of code.
+I wanted to build an application that shows array methods all in one place and puts them into categories. The Appication gives explanations of each method and also shows examples of code.
 
 ### Objective
 
