@@ -1,7 +1,6 @@
 # array-methods
 
-A brief description of your full-stack application.  
-Explain what the app does, who it’s for, and what problem it solves.
+An application that shows all array methods in one place, explained and categorised.
 
 Live Demo: https://array-methods-ten.vercel.app/
 
