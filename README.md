@@ -26,6 +26,8 @@ Live Demo: https://array-methods-ten.vercel.app/
 
 ### Motivation
 
+- Personal project
+
 I wanted to build an application to help me understand array methods. The application shows array methods all in one place and puts them into categories. The application also  gives explanations of each method with examples of code.
 
 ### Objective
